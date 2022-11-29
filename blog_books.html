@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana-Blog</title>
+    <style type="text/css">
+        body{
+            background: -webkit-gradient(linear, center top, center bottom,color-stop(0%, #43cea2), color-stop(99%, #185a9d));
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .navbar a{
+            float: left;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            padding: 20px 25px;
+            text-transform: uppercase;
+        }
+        .navbar a:hover{
+            background-color: turquoise;
+        }
+        .header{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        .left{
+            float: left;
+            width: 70%;
+        }
+        .right{
+            float:right;
+            width: 30%;
+        }
+        .border{
+            border: 5px solid black;
+            background: -webkit-gradient(linear, left top, right bottom,color-stop(0%, #43cea2), color-stop(99%, #185a9d));
+        }
+        #border2{
+            border: 5px solid white;
+        }
+        .card{
+            padding: 20px;
+            margin: 20px;
+            color: black;
+        }
+        .img{
+            width: 100%;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            font-size: large;
+            font-weight: 700;
+        }
+        .decorate{
+            font-size: large;
+            font-style: italic;
+        }
+        .button{
+            background-color: black;
+            color: white;
+        }
+        .komentar{
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="proektna_zadaca_strana_1.html">Home</a>
+        <a href="proektna_zadaca_strana_2.html">Favourite things</a>
+        <a href="proektna_zadaca_strana_3.html">Gallery</a>
+        <a href="proektna_zadaca_strana_4.html">Blog</a>
+        <a href="proektna_zadaca_strana_5.html">Form</a>
+        <a href="proektna_zadaca_strana_6.html">Contact</a>
+    </div>
+    <div class="border" id="border2">
+        <header class="header">Ana's Blog</header>
+    </div>
+    <div class="left">
+        <div class="card border">
+            <h1 id="book">Best book of all time?</h1>
+            <h3>It's hard to choose one, isn't it?</h3>
+            <div class="img">
+                <img src="the_storyteller.jpg" width="320" height="240" alt="The storyteller by Jodi Picoult">
+            </div>
+            <p>Given there are a lot of amazing writers it's hard to choose one favourite book.
+                My personal favourites include:
+                <ul class="decorate">
+                    <li>Literally anything written by Dostoyevsky</li>
+                    <li>The hunchback of Notre-Dame by Victor Hugo</li>
+                    <li>Les misérables by Victor Hugo</li>
+                    <li>The bell jar by Sylvia Plath</li>
+                    <li>To kill a mockingbird by Harper Lee</li>
+                    <li>The stranger by Albert Camus</li>
+                    <li>The storyteller by Jodi Picoult</li>
+                    <li>The little prince by Antoine de Saint-Exupéry</li>
+                </ul>
+            </p>
+            <p>Share your favourite book with the community and explain why you like it so much.</p>
+            <div id="dodadi7"></div>
+            <form name="forma7" method="post" action="#">
+                <textarea name="tekst7" placeholder="Which one is your all time favourite?" rows="4" cols="120"></textarea>
+                <button id="kopce7" type="button" class="button">Add comment</button>
+            </form>
+        </div>
+        <div class="card border">
+            <h1 id="quote">Best book quote of all time?</h1>
+            <h3>You know what Rumi says: Raise your words, not your voice. It is rain that grows flowers, not thunder!</h3>
+            <div class="img">
+                <img src="the_little_prince.png" width="320" height="240" alt="The little prince quote">
+            </div>
+            <p>
+                My personal favourites include:
+                <ul class="decorate">
+                    <li>It is only with the heart that one can see rightly; what is essential is invisible to the eye.-by Antoine de Saint-Exupéry</li>
+                    <li>The mystery of human existence lies not in just staying alive, but in finding something to live for.-by Fyodor Dostoyevsky</li>
+                    <li>Nothing in this world is harder than speaking the truth, nothing easier than flattery.-by Fyodor Dostoyevsky</li>
+                    <li>You will never reach your destination if you stop and throw stones at every dog that barks.-by Fyodor Dostoyevsky</li>
+                    <li>A one-eyed man is much more incomplete than a blind man. He knows what he lacks.-by Victor Hugo</li>
+                    <li>It was these same bells that had made him deaf, but mothers often love best the child that has made them suffer the most.-by Victor Hugo</li>
+                    <li>The daylight belongs to everybody. Why do they only give me the dark?-by Victor Hugo</li>
+                    <li>For love is like a tree, it grows of its own accord, it puts down deep roots into our whole being, 
+                        and often continues to put out leaves over a heart in ruins.-by Victor Hugo
+                    </li>
+                    <li>Once you have an idea, you find it everywhere!-by Victor Hugo</li>
+                    <li>It is nothing to die. It is frightful not to live.-by Victor Hugo</li>
+                    <li>The one thing that doesn't abide by majority rule is a person's conscience.-by Harper Lee</li>
+                    <li>Happy families are all alike; every unhappy family is unhappy in its own way.-by Tolstoy</li>
+                </ul>
+            </p>
+            <p>What's yours and why?</p>
+            <div id="dodadi8"></div>
+            <form name="forma8" method="post" action="#">
+                <textarea name="tekst8" placeholder="Deepest book quote?" rows="4" cols="120"></textarea>
+                <button id="kopce8" type="button" class="button">Add comment</button>
+            </form>
+        </div>
+    </div>
+    <div class="right">
+        <div class="card border">
+            <h1>About me</h1>
+            <p>Hi, my name is Ana! As you can probably observe by the content of the blog I love
+                the Karate Kid, Friends, books and music. Feel free to share your thoughts on 
+                the mentioned topics and even suggest new ones. Creative ideas are very much appreciated!
+            </p>
+            <div class="img">
+                <img src="glasses.jpg" width="160" height="120" alt="Glasses image">
+            </div>
+        </div>
+        <div class="card border">
+            <h1>Popular posts</h1>
+            <div class="img">
+                <a href="#book">Best book of all time?</a>
+            </div>
+            <div class="img">
+                <a href="#quote">Best book quote of all time?</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var roditel;
+        var nov;
+        var tekst;
+        var komentar;
+        var datum;
+        var date;
+        var br;
+        function add_comment(event)
+        {
+            if(event.target.getAttribute("class")=="button")
+            {
+                if(event.target.getAttribute("id")=="kopce7")
+                {
+                    roditel=document.getElementById("dodadi7");
+                    tekst=document.forms["forma7"]["tekst7"].value;
+                    const d = new Date();
+                    br = document.createElement("br");
+                    datum="Posted on: "+d;
+                    date=document.createTextNode(datum);
+                    komentar=document.createTextNode(tekst);
+                    nov=document.createElement("p");
+                    nov.setAttribute("class", "komentar");
+                    nov.appendChild(date);
+                    nov.appendChild(br);
+                    nov.appendChild(komentar);
+                    roditel.appendChild(nov);
+                }
+                if(event.target.getAttribute("id")=="kopce8")
+                {
+                    roditel=document.getElementById("dodadi8");
+                    tekst=document.forms["forma8"]["tekst8"].value;
+                    const d = new Date();
+                    br = document.createElement("br");
+                    datum="Posted on: "+d;
+                    date=document.createTextNode(datum);
+                    komentar=document.createTextNode(tekst);
+                    nov=document.createElement("p");
+                    nov.setAttribute("class", "komentar");
+                    nov.appendChild(date);
+                    nov.appendChild(br);
+                    nov.appendChild(komentar);
+                    roditel.appendChild(nov);
+                }
+            }
+        }
+        document.addEventListener("click", add_comment, false);
+    </script>
+</body>
+</html>
