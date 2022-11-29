@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana-Blog</title>
+    <style type="text/css">
+        body{
+            background: -webkit-gradient(linear, center top, center bottom,color-stop(0%, #43cea2), color-stop(99%, #185a9d));
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .navbar a{
+            float: left;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            padding: 20px 25px;
+            text-transform: uppercase;
+        }
+        .navbar a:hover{
+            background-color: turquoise;
+        }
+        .header{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        .left{
+            float: left;
+            width: 70%;
+        }
+        .right{
+            float:right;
+            width: 30%;
+        }
+        .border{
+            border: 5px solid black;
+            background: -webkit-gradient(linear, left top, right bottom,color-stop(0%, #43cea2), color-stop(99%, #185a9d));
+        }
+        #border2{
+            border: 5px solid white;
+        }
+        .card{
+            padding: 20px;
+            margin: 20px;
+            color: black;
+        }
+        .img{
+            width: 100%;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            font-size: large;
+            font-weight: 700;
+        }
+        .decorate{
+            font-size: large;
+            font-style: italic;
+        }
+        .button{
+            background-color: black;
+            color: white;
+        }
+        .komentar{
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="proektna_zadaca_strana_1.html">Home</a>
+        <a href="proektna_zadaca_strana_2.html">Favourite things</a>
+        <a href="proektna_zadaca_strana_3.html">Gallery</a>
+        <a href="proektna_zadaca_strana_4.html">Blog</a>
+        <a href="proektna_zadaca_strana_5.html">Form</a>
+        <a href="proektna_zadaca_strana_6.html">Contact</a>
+    </div>
+    <div class="border" id="border2">
+        <header class="header">Ana's Blog</header>
+    </div>
+    <div class="left">
+        <div class="card border">
+            <h1 id="friends">Were Ross and Rachel on a break?</h1>
+            <h3>TV show-Friends, popular question</h3>
+            <div class="img">
+                <img src="friends.jpg" width="320" height="240" alt="Ross and Rachel">
+            </div>
+            <p>If you've seen Friends way too many times just as me, you are likely to be interested
+                in joining this discussion. This question remains interesting and open to interpretation
+                many years after it was first asked. So, are you team Ross or team Rachel on this one?
+            </p>
+            <div id="dodadi1"></div>
+            <form name="forma1" method="post" action="#">
+                <textarea name="tekst1" placeholder="Were they really on a break?" rows="4" cols="120"></textarea>
+                <button id="kopce1" type="button" class="button">Add comment</button>
+            </form>
+        </div>
+        <div class="card border">
+            <h1>Was Daniel the real bully in the Karate Kid?</h1>
+            <h3>Best movie of all time-The Karate Kid</h3>
+            <div class="img">
+                <img src="daniel_san.jpg" width="320" height="240" alt="Daniel-San and Johnny">
+            </div>
+            <p>If Karate Kid is also your all time favourite movie, you might have asked yourself 
+                who is actually the real bully in this 80s classic. Was it really Johnny? Or did 
+                Mr Miyagi's student do some pretty inexcusable things to Johnny as well?
+                Let us know!
+            </p>
+            <div id="dodadi2"></div>
+            <form name="forma2" method="post" action="#">
+                <textarea name="tekst2" placeholder="Who was the real bully?" rows="4" cols="120"></textarea>
+                <button id="kopce2" type="button" class="button">Add comment</button>
+            </form>
+        </div>
+        <div class="card border">
+            <h1>Was Daniel's crane kick illegal in the All-Valley tournament?</h1>
+            <h3>Best movie of all time-The Karate Kid</h3>
+            <div class="img">
+                <img src="karate+kid+crane+kick.jpg" width="320" height="240" alt="Crane_Kick">
+            </div>
+            <p>Fans of this movie might argue that Daniel won fair and square in the famous karate tournament.
+                But was this really the case? Should Daniel have been disqualified because the crane kick to the head 
+                was illegal? Discuss in the comments section!
+            </p>
+            <div id="dodadi3"></div>
+            <form name="forma3" method="post" action="#">
+                <textarea name="tekst3" placeholder="Who actually won the All-Valley tournament?" rows="4" cols="120"></textarea>
+                <button id="kopce3" type="button" class="button">Add comment</button>
+            </form>
+        </div>
+        <div class="card border">
+            <h1>No mercy or show mercy for Kreese?</h1>
+            <h3>Best series made after an iconic movie-Cobra Kai</h3>
+            <div class="img">
+                <img src="kreese.jpg" width="320" height="240" alt="Kreese redemption">
+            </div>
+            <p>Given Kreese's history shown in the popular TV series, fans start to wonder if deep down
+                Kreese is not actually a bad person. But does he actually deserve forgiveness for his actions because of his redemption arc
+                or will he fool us again into thinking this and do the unexpected?
+            </p>
+            <div id="dodadi4"></div>
+            <form name="forma4" method="post" action="#">
+                <textarea name="tekst4" placeholder="Does Kreese deserve forgiveness for his actions?" rows="4" cols="120"></textarea>
+                <button id="kopce4" type="button" class="button">Add comment</button>
+            </form>
+        </div>
+        <div class="card border">
+            <h1 id="best_fighter">Daniel, Johnny, Chozen or Mike-who is the best fighter?</h1>
+            <h3><a href="https://www.youtube.com/watch?v=oomCIXGzsR0">Who is the best around?-Joe Esposito style</a></h3>
+            <div class="img">
+                <img src="best_fighter.jpg" width="320" height="240" alt="Best Fighter">
+            </div>
+            <p>I am not interested in starting a war asking this question, but let's face it-
+                we all think one of them is actually the winner in this battle.
+                Who is the toughest in your opinion?
+            </p>
+            <div id="dodadi5"></div>
+            <form name="forma5" method="post" action="#">
+                <textarea name="tekst5" placeholder="Who is the best among the best?" rows="4" cols="120"></textarea>
+                <button id="kopce5" type="button" class="button">Add comment</button>
+            </form>
+        </div>
+        <div class="card border">
+            <h1>Important life lessons from Mr. Miyagi</h1>
+            <h3>Mr. Miyagi's best quotes</h3>
+            <div class="img">
+                <img src="mr_miyagi.jpg" width="320" height="240" alt="Mr. Miyagi's quotes">
+            </div>
+            <p>Karate Kid has tought me many life lessons and therefore is my favourite movie.
+                My personal favourites are:
+                <ul class="decorate">
+                    <li>It's okay to lose to opponent. It's never okay to lose to fear.</li>
+                    <li>For a man with no forgiveness in his heart, life is a worse punishment than death.</li>
+                    <li>A lie becomes the truth only if people want to believe it.</li>
+                    <li>Never put passion in front of principle. Even if you win, you'll lose!</li>
+                    <li>You should trust the quality of what you know, not the quantity.</li>
+                    <li>First learn how to stand, then learn how to fly.</li>
+                    <li>If it comes from inside you, it's always the right one.</li>
+                    <li>There's no such thing as a bad student, there's only a bad teacher.</li>
+                </ul>
+            </p>
+            <p>What is the most important life lesson from Karate Kid in your opinion?</p>
+            <div id="dodadi6"></div>
+            <form name="forma6" method="post" action="#">
+                <textarea name="tekst6" placeholder="Which important life lesson is your favourite?" rows="4" cols="120"></textarea>
+                <button id="kopce6" type="button" class="button">Add comment</button>
+            </form>
+        </div>
+    </div>
+    <div class="right">
+        <div class="card border">
+            <h1>About me</h1>
+            <p>Hi, my name is Ana! As you can probably observe by the content of the blog I love
+                the Karate Kid, Friends, books and music. Feel free to share your thoughts on 
+                the mentioned topics and even suggest new ones. Creative ideas are very much appreciated!
+            </p>
+            <div class="img">
+                <img src="glasses.jpg" width="160" height="120" alt="Glasses image">
+            </div>
+        </div>
+        <div class="card border">
+            <h1>Popular posts</h1>
+            <div class="img">
+                <a href="#friends">Were Ross and Rachel on a break?</a>
+            </div>
+            <div class="img">
+                <a href="#best_fighter">Daniel, Johnny, Chozen or Mike-who is the best fighter?</a>
+            </div>
+            <div class="img">
+                <a href="#kreese">No mercy or show mercy?</a>
+            </div>
+        </div>
+        <script>
+            var roditel;
+        var nov;
+        var tekst;
+        var komentar;
+        var datum;
+        var date;
+        var br;
+        function add_comment(event)
+        {
+            if(event.target.getAttribute("class")=="button")
+            {
+                if(event.target.getAttribute("id")=="kopce1")
+                {
+                    roditel=document.getElementById("dodadi1");
+                    tekst=document.forms["forma1"]["tekst1"].value;
+                    const d = new Date();
+                    br = document.createElement("br");
+                    datum="Posted on: "+d;
+                    date=document.createTextNode(datum);
+                    komentar=document.createTextNode(tekst);
+                    nov=document.createElement("p");
+                    nov.setAttribute("class", "komentar");
+                    nov.appendChild(date);
+                    nov.appendChild(br);
+                    nov.appendChild(komentar);
+                    roditel.appendChild(nov);
+                }
+                if(event.target.getAttribute("id")=="kopce2")
+                {
+                    roditel=document.getElementById("dodadi2");
+                    tekst=document.forms["forma2"]["tekst2"].value;
+                    const d = new Date();
+                    br = document.createElement("br");
+                    datum="Posted on: "+d;
+                    date=document.createTextNode(datum);
+                    komentar=document.createTextNode(tekst);
+                    nov=document.createElement("p");
+                    nov.setAttribute("class", "komentar");
+                    nov.appendChild(date);
+                    nov.appendChild(br);
+                    nov.appendChild(komentar);
+                    roditel.appendChild(nov);
+                }
+                if(event.target.getAttribute("id")=="kopce3")
+                {
+                    roditel=document.getElementById("dodadi3");
+                    tekst=document.forms["forma3"]["tekst3"].value;
+                    const d = new Date();
+                    br = document.createElement("br");
+                    datum="Posted on: "+d;
+                    date=document.createTextNode(datum);
+                    komentar=document.createTextNode(tekst);
+                    nov=document.createElement("p");
+                    nov.setAttribute("class", "komentar");
+                    nov.appendChild(date);
+                    nov.appendChild(br);
+                    nov.appendChild(komentar);
+                    roditel.appendChild(nov);
+                }
+                if(event.target.getAttribute("id")=="kopce4")
+                {
+                    roditel=document.getElementById("dodadi4");
+                    tekst=document.forms["forma4"]["tekst4"].value;
+                    const d = new Date();
+                    br = document.createElement("br");
+                    datum="Posted on: "+d;
+                    date=document.createTextNode(datum);
+                    komentar=document.createTextNode(tekst);
+                    nov=document.createElement("p");
+                    nov.setAttribute("class", "komentar");
+                    nov.appendChild(date);
+                    nov.appendChild(br);
+                    nov.appendChild(komentar);
+                    roditel.appendChild(nov);
+                }
+                if(event.target.getAttribute("id")=="kopce5")
+                {
+                    roditel=document.getElementById("dodadi5");
+                    tekst=document.forms["forma5"]["tekst5"].value;
+                    const d = new Date();
+                    br = document.createElement("br");
+                    datum="Posted on: "+d;
+                    date=document.createTextNode(datum);
+                    komentar=document.createTextNode(tekst);
+                    nov=document.createElement("p");
+                    nov.setAttribute("class", "komentar");
+                    nov.appendChild(date);
+                    nov.appendChild(br);
+                    nov.appendChild(komentar);
+                    roditel.appendChild(nov);
+                }
+                if(event.target.getAttribute("id")=="kopce6")
+                {
+                    roditel=document.getElementById("dodadi6");
+                    tekst=document.forms["forma6"]["tekst6"].value;
+                    const d = new Date();
+                    br = document.createElement("br");
+                    datum="Posted on: "+d;
+                    date=document.createTextNode(datum);
+                    komentar=document.createTextNode(tekst);
+                    nov=document.createElement("p");
+                    nov.setAttribute("class", "komentar");
+                    nov.appendChild(date);
+                    nov.appendChild(br);
+                    nov.appendChild(komentar);
+                    roditel.appendChild(nov);
+                }
+            }
+        }
+        document.addEventListener("click", add_comment, false);
+        </script>
+</body>
+</html>
