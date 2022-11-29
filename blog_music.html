@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana-Blog</title>
+    <style type="text/css">
+        body{
+            background: -webkit-gradient(linear, center top, center bottom,color-stop(0%, #43cea2), color-stop(99%, #185a9d));
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .navbar a{
+            float: left;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            padding: 20px 25px;
+            text-transform: uppercase;
+        }
+        .navbar a:hover{
+            background-color: turquoise;
+        }
+        .header{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+            color: white;
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        .left{
+            float: left;
+            width: 70%;
+        }
+        .right{
+            float:right;
+            width: 30%;
+        }
+        .border{
+            border: 5px solid black;
+            background: -webkit-gradient(linear, left top, right bottom,color-stop(0%, #43cea2), color-stop(99%, #185a9d));
+        }
+        #border2{
+            border: 5px solid white;
+        }
+        .card{
+            padding: 20px;
+            margin: 20px;
+            color: black;
+        }
+        .img{
+            width: 100%;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            font-size: large;
+            font-weight: 700;
+        }
+        .decorate{
+            font-size: large;
+            font-style: italic;
+        }
+        .button{
+            background-color: black;
+            color: white;
+        }
+        .komentar{
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="proektna_zadaca_strana_1.html">Home</a>
+        <a href="proektna_zadaca_strana_2.html">Favourite things</a>
+        <a href="proektna_zadaca_strana_3.html">Gallery</a>
+        <a href="proektna_zadaca_strana_4.html">Blog</a>
+        <a href="proektna_zadaca_strana_5.html">Form</a>
+        <a href="proektna_zadaca_strana_6.html">Contact</a>
+    </div>
+    <div class="border" id="border2">
+        <header class="header">Ana's Blog</header>
+    </div>
+    <div class="left">
+        <div class="card border">
+            <h1 id="music">Best rock band of all time?</h1>
+            <h3>From Metallica through the Rolling Stones and the Beatles to Queen, which band deserves the crown?</h3>
+            <div class="img">
+                <img src="queen.jpg" width="320" height="240" alt="Queen">
+            </div>
+            <p>My personal favourite is Queen, what's yours?
+            </p>
+            <div id="dodadi9"></div>
+            <form name="forma9" method="post" action="#">
+                <textarea name="tekst9" placeholder="Who wins the rock fight, who, who, who?" rows="4" cols="120"></textarea>
+                <button id="kopce9" type="button" class="button">Add comment</button>
+            </form>
+        </div>
+    </div>
+    <div class="right">
+        <div class="card border">
+            <h1>About me</h1>
+            <p>Hi, my name is Ana! As you can probably observe by the content of the blog I love
+                the Karate Kid, Friends, books and music. Feel free to share your thoughts on 
+                the mentioned topics and even suggest new ones. Creative ideas are very much appreciated!
+            </p>
+            <div class="img">
+                <img src="glasses.jpg" width="160" height="120" alt="Glasses image">
+            </div>
+        </div>
+        <div class="card border">
+            <h1>Popular posts</h1>
+            <div class="img">
+                <a href="#music">Best rock band of all time?</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var roditel;
+        var nov;
+        var tekst;
+        var komentar;
+        var datum;
+        var date;
+        var br;
+        function add_comment(event)
+        {
+            if(event.target.getAttribute("class")=="button")
+            {
+                if(event.target.getAttribute("id")=="kopce9")
+                {
+                    roditel=document.getElementById("dodadi9");
+                    tekst=document.forms["forma9"]["tekst9"].value;
+                    const d = new Date();
+                    br = document.createElement("br");
+                    datum="Posted on: "+d;
+                    date=document.createTextNode(datum);
+                    komentar=document.createTextNode(tekst);
+                    nov=document.createElement("p");
+                    nov.setAttribute("class", "komentar");
+                    nov.appendChild(date);
+                    nov.appendChild(br);
+                    nov.appendChild(komentar);
+                    roditel.appendChild(nov);
+                }
+            }
+        }
+        document.addEventListener("click", add_comment, false);
+    </script>
+</body>
+</html>
