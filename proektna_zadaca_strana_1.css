@@ -1,0 +1,64 @@
+body{
+    background-image: url(pexels-roman-odintsov-4871011.jpg);
+}
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar a{
+    float: left;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    padding: 20px 25px;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    background-color: turquoise;
+}
+img{
+    width: 20%;
+    margin-top: 5em;
+    margin-left: 35%;
+    margin-bottom: 5em;
+    -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+    display: block;
+    width: 30%;
+}
+img:hover{
+    -webkit-transform: rotate(360deg) scale(1.1, 1.1);
+    transform: rotate(360deg) scale(1.1, 1.1);
+}
+p{
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 20px 20px;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    line-height: 1.5em;
+}
+div ul{
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding: 20px 20px;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    line-height: 1.5em;
+    list-style-type: none;
+}
+.klasa{
+    text-decoration: underline;
+    font-style: italic;
+}
