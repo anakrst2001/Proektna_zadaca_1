@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana-Form</title>
+    <link rel="stylesheet" type="text/css" href="proektna_zadaca_strana_5.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="proektna_zadaca_strana_1.html">Home</a>
+        <a href="proektna_zadaca_strana_2.html">Favourite things</a>
+        <a href="proektna_zadaca_strana_3.html">Gallery</a>
+        <a href="proektna_zadaca_strana_4.html">Blog</a>
+        <a href="proektna_zadaca_strana_5.html">Form</a>
+        <a href="proektna_zadaca_strana_6.html">Contact</a>
+    </div>
+    <br>
+    <div>
+        <h1 class="title">
+            Please fill out this form so you can help us improve our website in the future!
+        </h1>
+        <form method="post" action="#">
+            <p>
+                <label><strong>Name:</strong>
+                    <input name="name" type="text" size="25" maxlength="30">
+                </label>
+            </p>
+            <p>
+                <label><strong>Surname:</strong>
+                    <input name="surname" type="text" size="25" maxlength="30">
+                </label>
+            </p>
+            <p>
+                <strong>How did you find out about this website?</strong>
+                <label>
+                    Through friends
+                    <input name="how" type="radio" value="friends" checked>
+                </label>
+                <label>
+                    Through github
+                    <input name="how" type="radio" value="github">
+                </label>
+                <label>
+                    Through search engine 
+                    <input name="how" type="radio" value="engine">
+                </label>
+                <label>
+                    Through link from another site
+                    <input name="how" type="radio" value="link">
+                </label>
+                <label>
+                    Other
+                    <input name="how" type="radio" value="other">
+                </label>
+            </p>
+            <p>
+                <strong>Things you liked about this site?</strong>
+                <label>
+                    Site design
+                    <input name="things_you_liked" type="checkbox" value="design">
+                </label>
+                <label>
+                    Website images
+                    <input name="things_you_liked" type="checkbox" value="website_images">
+                </label>
+                <label>
+                    Background images
+                    <input name="things_you_liked" type="checkbox" value="background_images">
+                </label>
+                <label>
+                    Easy navigation
+                    <input name="things_you_liked" type="checkbox" value="navigation">
+                </label>
+                <label>
+                    Interesting content
+                    <input name="things_you_liked" type="checkbox" value="content">
+                </label>
+                <label>
+                    Interesting links
+                    <input name="things_you_liked" type="checkbox" value="links">
+                </label>
+            </p>
+            <p>
+                <label><strong>How satisfied are you with the overall experience on our site?</strong>
+                    <select name="rating">
+                        <option selected>Very satisfied</option>
+                        <option>Satisfied</option>
+                        <option>Neutral</option>
+                        <option>Unsatisfied</option>
+                        <option>Very unsatisfied</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <strong>How likely are you to visit this site again in the future?</strong>
+                <select name="visit_again">
+                    <option selected>I will certainly come back!</option>
+                    <option>90%</option>
+                    <option>80%</option>
+                    <option>70%</option>
+                    <option>60%</option>
+                    <option>50%</option>
+                    <option>40%</option>
+                    <option>30%</option>
+                    <option>20%</option>
+                    <option>10%</option>
+                    <option>I wouldn't visit this website again!</option>
+                </select>
+            </p>
+            <p>
+                <strong>Would you recommend this site?</strong><br>
+                <label>
+                    Yes
+                    <input name="recommend" type="radio" value="yes">
+                </label>
+                <label>
+                    No
+                    <input name="recommend" type="radio" value="no">
+                </label>
+            </p>
+            <p>
+                <label><strong>How do you think this website can be improved?</strong><br>
+                    <textarea name="comments" placeholder="Enter your ideas!" rows="5" cols="40"></textarea>
+                </label>
+            </p>
+            <p>
+                <label><strong>Did you encounter any problems while on this website?</strong><br>
+                    <textarea name="problems" placeholder="Any problems?" rows="5" cols="40"></textarea>
+                </label>
+            </p>
+            <p>
+                <input class="submit_clear" type="submit" value="Submit">
+                <input class="submit_clear" type="reset" value="Clear">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
