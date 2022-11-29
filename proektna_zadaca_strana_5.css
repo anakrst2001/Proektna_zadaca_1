@@ -1,0 +1,51 @@
+body{
+    background: -webkit-gradient(linear, left top, right top,color-stop(0%, #4568dc), color-stop(99%, #b06ab3));
+}
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar a{
+    float: left;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    padding: 20px 25px;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    background-color: turquoise;
+}
+p{
+    text-align: center;
+    color: white;
+}
+p strong{
+    color: black;
+    font-size: x-large;
+}
+label{
+    color: black;
+    font-size: large;
+}
+.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow: -4px 4px 6px #E7717D;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    color: #AFD275;
+}
+textarea{
+    color: #AFD275;
+}
+.submit_clear{
+    background-color: black;
+    color: white;
+}
