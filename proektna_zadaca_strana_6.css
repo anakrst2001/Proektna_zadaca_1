@@ -1,0 +1,78 @@
+body{
+    background: -webkit-gradient(linear, left top, right top,color-stop(0%, #ddd6f3), color-stop(99%, #faaca8));
+}
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar a{
+    float: left;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    padding: 20px 25px;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    background-color: turquoise;
+}
+.contact-word {
+    animation: color-animation 2s linear infinite;
+}
+.contact-word-1 {
+    --color-1: #CB2D6F;
+    --color-2: #501F3A;
+    --color-3: #0677A1;
+}
+.contact-word-2 {
+    --color-1: #14A098;
+    --color-2: #00887A;
+    --color-3: #474B4F;
+}
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+.float{
+    width: 50%;
+    float: left;
+    border: 10px double black;
+    margin-top: 125px;
+    border-radius: 30px;
+}
+.img{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.img2{
+    margin-top: 127px;
+    margin-left: 225px;
+}
+.right{
+    float: right;
+    margin-right: 125px;
+    margin-top: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+.extra{
+    margin-right: 85px;
+}
+.contact{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 75px;
+    text-transform: uppercase;
+}
